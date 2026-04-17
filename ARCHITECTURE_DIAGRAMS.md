@@ -13,21 +13,21 @@ This diagram shows the topology of the application, representing how the fronten
 ```mermaid
 graph TD;
     %% External layer
-    Client[React Frontend / Web Browser]
+    Client["React Frontend / Web Browser"]
 
     %% Gateway layer
     subgraph "API Gateway Layer"
-        Gateway[API Gateway :8080<br/>(JWT Filter + Routing)]
+        Gateway["API Gateway :8080<br/>(JWT Filter + Routing)"]
     end
 
     %% Service Registry
-    Eureka[Eureka Discovery Service :8761]
+    Eureka["Eureka Discovery Service :8761"]
 
     %% Services layer
     subgraph "Microservices Layer"
-        UserService[User Service :8081<br/>(Auth, Profile)]
-        ProductService[Product Service :8082<br/>(Catalog, Uploads)]
-        OrderService[Order Service :8083<br/>(Cart, Orders)]
+        UserService["User Service :8081<br/>(Auth, Profile)"]
+        ProductService["Product Service :8082<br/>(Catalog, Uploads)"]
+        OrderService["Order Service :8083<br/>(Cart, Orders)"]
     end
 
     %% Database layer
@@ -199,12 +199,12 @@ This illustrates how Docker Orchestration maps external traffic to the Docker Ne
 
 ```mermaid
 graph LR;
-    User((User)) -->|Port 80| Nginx[Frontend Container<br/>Nginx + React JS]
-    Nginx -->|API Proxy :8080| Gateway[api-gateway]
-    Gateway -->|Backplane network| Discovery[discovery-service]
-    Gateway -->|Backplane network| MS[user/product/order services]
+    User(("User")) -->|"Port 80"| Nginx["Frontend Container<br/>Nginx + React JS"]
+    Nginx -->|"API Proxy :8080"| Gateway["api-gateway"]
+    Gateway -->|"Backplane network"| Discovery["discovery-service"]
+    Gateway -->|"Backplane network"| MS["user/product/order services"]
     
-    MS --> MySQL[(MySQL Container<br/>Port 3306)]
+    MS --> MySQL[("MySQL Container<br/>Port 3306")]
     
     classDef container fill:#0db7ed,stroke:#fff,stroke-width:2px,color:#fff;
     class Nginx,Gateway,Discovery,MS,MySQL container;
