@@ -1,0 +1,85 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------< com.kisanconnect:api-gateway >--------------------
+[INFO] Building ApiGateway 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ api-gateway >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ api-gateway ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ api-gateway ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 4 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ api-gateway ---
+[INFO] skip non existing resourceDirectory C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\api-gateway\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ api-gateway ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ api-gateway <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ api-gateway ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-04-15T23:34:31.467+05:30  INFO 9608 --- [api-gateway] [           main] c.k.gateway.ApiGatewayApplication        : Starting ApiGatewayApplication using Java 21.0.5 with PID 9608 (C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\api-gateway\target\classes started by VICTUS in C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\api-gateway)
+2026-04-15T23:34:31.470+05:30  INFO 9608 --- [api-gateway] [           main] c.k.gateway.ApiGatewayApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-15T23:34:32.232+05:30  INFO 9608 --- [api-gateway] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=09c4e69b-1126-31d2-b12c-40f1d9859bc0
+2026-04-15T23:34:32.530+05:30  INFO 9608 --- [api-gateway] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-15T23:34:32.545+05:30  INFO 9608 --- [api-gateway] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T23:34:32.546+05:30  INFO 9608 --- [api-gateway] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T23:34:32.621+05:30  INFO 9608 --- [api-gateway] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1102 ms
+2026-04-15T23:34:33.192+05:30  INFO 9608 --- [api-gateway] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T23:34:33.398+05:30  WARN 9608 --- [api-gateway] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T23:34:33.418+05:30  INFO 9608 --- [api-gateway] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T23:34:33.437+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T23:34:33.439+05:30  INFO 9608 --- [api-gateway] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T23:34:33.448+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T23:34:33.449+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T23:34:33.661+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T23:34:33.663+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T23:34:33.665+05:30  INFO 9608 --- [api-gateway] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T23:34:33.666+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776276273665 with initial instances count: 4
+2026-04-15T23:34:33.669+05:30  INFO 9608 --- [api-gateway] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application API-GATEWAY with eureka with status UP
+2026-04-15T23:34:33.669+05:30  INFO 9608 --- [api-gateway] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776276273669, current=UP, previous=STARTING]
+2026-04-15T23:34:33.670+05:30  INFO 9608 --- [api-gateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080: registering service...
+2026-04-15T23:34:33.689+05:30  INFO 9608 --- [api-gateway] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-15T23:34:33.690+05:30  INFO 9608 --- [api-gateway] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8080
+2026-04-15T23:34:33.701+05:30  INFO 9608 --- [api-gateway] [           main] c.k.gateway.ApiGatewayApplication        : Started ApiGatewayApplication in 2.79 seconds (process running for 3.44)
+2026-04-15T23:34:33.711+05:30  INFO 9608 --- [api-gateway] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 - registration status: 204
+2026-04-15T23:35:08.979+05:30  INFO 9608 --- [api-gateway] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T23:35:08.979+05:30  INFO 9608 --- [api-gateway] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T23:35:08.980+05:30  INFO 9608 --- [api-gateway] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:01 min
+[INFO] Finished at: 2026-04-15T23:36:27+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:4.0.5:run (default-cli) on project api-gateway: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

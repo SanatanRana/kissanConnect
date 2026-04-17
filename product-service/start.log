@@ -1,0 +1,105 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.kisanconnect:product-service >------------------
+[INFO] Building ProductService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ product-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ product-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 15 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ product-service ---
+[INFO] skip non existing resourceDirectory C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\product-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ product-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ product-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ product-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-04-15T23:21:23.034+05:30  INFO 15604 --- [product-service] [           main] c.k.product.ProductServiceApplication    : Starting ProductServiceApplication using Java 21.0.5 with PID 15604 (C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\product-service\target\classes started by VICTUS in C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\product-service)
+2026-04-15T23:21:23.041+05:30  INFO 15604 --- [product-service] [           main] c.k.product.ProductServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-04-15T23:21:24.679+05:30  INFO 15604 --- [product-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T23:21:24.999+05:30  INFO 15604 --- [product-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 299 ms. Found 2 JPA repository interfaces.
+2026-04-15T23:21:25.519+05:30  INFO 15604 --- [product-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=54b132f9-6ff7-3942-a4b4-05725b0d4999
+2026-04-15T23:21:26.292+05:30  INFO 15604 --- [product-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8082 (http)
+2026-04-15T23:21:26.319+05:30  INFO 15604 --- [product-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T23:21:26.319+05:30  INFO 15604 --- [product-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T23:21:26.445+05:30  INFO 15604 --- [product-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3293 ms
+2026-04-15T23:21:26.805+05:30  INFO 15604 --- [product-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T23:21:26.953+05:30  INFO 15604 --- [product-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T23:21:28.009+05:30  INFO 15604 --- [product-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T23:21:28.081+05:30  INFO 15604 --- [product-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T23:21:28.962+05:30  INFO 15604 --- [product-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4eacb6d1
+2026-04-15T23:21:28.967+05:30  INFO 15604 --- [product-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T23:21:29.121+05:30  WARN 15604 --- [product-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T23:21:29.166+05:30  INFO 15604 --- [product-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/kisan_product_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: kisan_product_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T23:21:31.398+05:30  INFO 15604 --- [product-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T23:21:31.676+05:30  INFO 15604 --- [product-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T23:21:31.851+05:30  INFO 15604 --- [product-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T23:21:34.591+05:30  WARN 15604 --- [product-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T23:21:34.889+05:30  WARN 15604 --- [product-service] [           main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3bf8316d-5e13-41f0-ba04-f06220ca5ce0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-15T23:21:34.907+05:30  INFO 15604 --- [product-service] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-15T23:21:36.041+05:30  INFO 15604 --- [product-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T23:21:36.113+05:30  WARN 15604 --- [product-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T23:21:36.160+05:30  INFO 15604 --- [product-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T23:21:36.208+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T23:21:36.215+05:30  INFO 15604 --- [product-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T23:21:36.232+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T23:21:36.877+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T23:21:36.881+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T23:21:36.885+05:30  INFO 15604 --- [product-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T23:21:36.889+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776275496887 with initial instances count: 4
+2026-04-15T23:21:36.895+05:30  INFO 15604 --- [product-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PRODUCT-SERVICE with eureka with status UP
+2026-04-15T23:21:36.895+05:30  INFO 15604 --- [product-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776275496895, current=UP, previous=STARTING]
+2026-04-15T23:21:36.898+05:30  INFO 15604 --- [product-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082: registering service...
+2026-04-15T23:21:36.942+05:30  INFO 15604 --- [product-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8082 (http) with context path '/'
+2026-04-15T23:21:36.944+05:30  INFO 15604 --- [product-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-04-15T23:21:36.977+05:30  INFO 15604 --- [product-service] [           main] c.k.product.ProductServiceApplication    : Started ProductServiceApplication in 14.884 seconds (process running for 16.243)
+2026-04-15T23:21:36.985+05:30  INFO 15604 --- [product-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082 - registration status: 204
+2026-04-15T23:26:36.258+05:30  INFO 15604 --- [product-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:31:36.291+05:30  INFO 15604 --- [product-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:36:36.320+05:30  INFO 15604 --- [product-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+^C

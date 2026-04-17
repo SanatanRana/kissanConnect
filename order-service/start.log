@@ -1,0 +1,106 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.kisanconnect:order-service >-------------------
+[INFO] Building OrderService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ order-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ order-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ order-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 11 source files with javac [debug parameters release 21] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ order-service ---
+[INFO] skip non existing resourceDirectory C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\order-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ order-service ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ order-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ order-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-04-15T23:07:57.598+05:30  INFO 21132 --- [order-service] [           main] c.k.order.OrderServiceApplication        : Starting OrderServiceApplication using Java 21.0.5 with PID 21132 (C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\order-service\target\classes started by VICTUS in C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\order-service)
+2026-04-15T23:07:57.605+05:30  INFO 21132 --- [order-service] [           main] c.k.order.OrderServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-15T23:07:59.114+05:30  INFO 21132 --- [order-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-15T23:07:59.433+05:30  INFO 21132 --- [order-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 299 ms. Found 1 JPA repository interface.
+2026-04-15T23:07:59.989+05:30  INFO 21132 --- [order-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ef0f6696-a190-35b4-9cf6-8371c06559cf
+2026-04-15T23:08:00.797+05:30  INFO 21132 --- [order-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8083 (http)
+2026-04-15T23:08:00.827+05:30  INFO 21132 --- [order-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T23:08:00.827+05:30  INFO 21132 --- [order-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T23:08:00.967+05:30  INFO 21132 --- [order-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3249 ms
+2026-04-15T23:08:01.310+05:30  INFO 21132 --- [order-service] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-15T23:08:01.419+05:30  INFO 21132 --- [order-service] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.7.Final
+2026-04-15T23:08:02.372+05:30  INFO 21132 --- [order-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-15T23:08:02.434+05:30  INFO 21132 --- [order-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-15T23:08:03.087+05:30  INFO 21132 --- [order-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@62f6185a
+2026-04-15T23:08:03.091+05:30  INFO 21132 --- [order-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-15T23:08:03.191+05:30  WARN 21132 --- [order-service] [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-15T23:08:03.230+05:30  INFO 21132 --- [order-service] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/kisan_order_db?createDatabaseIfNotExist=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.43
+	Default catalog/schema: kisan_order_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-15T23:08:05.180+05:30  INFO 21132 --- [order-service] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-15T23:08:05.325+05:30  INFO 21132 --- [order-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-15T23:08:05.474+05:30  INFO 21132 --- [order-service] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-15T23:08:05.964+05:30  WARN 21132 --- [order-service] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-15T23:08:06.202+05:30  WARN 21132 --- [order-service] [           main] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 05a5592e-1120-43e6-bea9-e2bf83b966f9
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-15T23:08:06.216+05:30  INFO 21132 --- [order-service] [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-15T23:08:07.161+05:30  INFO 21132 --- [order-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-04-15T23:08:07.232+05:30  WARN 21132 --- [order-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T23:08:07.275+05:30  INFO 21132 --- [order-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T23:08:07.321+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T23:08:07.328+05:30  INFO 21132 --- [order-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:08:07.344+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-04-15T23:08:07.345+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-04-15T23:08:07.948+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-04-15T23:08:07.951+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-04-15T23:08:07.954+05:30  INFO 21132 --- [order-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-04-15T23:08:07.957+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776274687955 with initial instances count: 1
+2026-04-15T23:08:07.963+05:30  INFO 21132 --- [order-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDER-SERVICE with eureka with status UP
+2026-04-15T23:08:07.964+05:30  INFO 21132 --- [order-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1776274687964, current=UP, previous=STARTING]
+2026-04-15T23:08:07.967+05:30  INFO 21132 --- [order-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-6OQSKS2K:order-service:8083: registering service...
+2026-04-15T23:08:08.005+05:30  INFO 21132 --- [order-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8083 (http) with context path '/'
+2026-04-15T23:08:08.007+05:30  INFO 21132 --- [order-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2026-04-15T23:08:08.033+05:30  INFO 21132 --- [order-service] [           main] c.k.order.OrderServiceApplication        : Started OrderServiceApplication in 11.37 seconds (process running for 13.141)
+2026-04-15T23:08:08.048+05:30  INFO 21132 --- [order-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDER-SERVICE/LAPTOP-6OQSKS2K:order-service:8083 - registration status: 204
+2026-04-15T23:13:07.372+05:30  INFO 21132 --- [order-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:18:07.435+05:30  INFO 21132 --- [order-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:23:07.484+05:30  INFO 21132 --- [order-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:28:07.511+05:30  INFO 21132 --- [order-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-04-15T23:33:07.530+05:30  INFO 21132 --- [order-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

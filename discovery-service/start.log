@@ -1,0 +1,130 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.kisanconnect:discovery-service >-----------------
+[INFO] Building DiscoveryService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:4.0.5:run (default-cli) > test-compile @ discovery-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ discovery-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ discovery-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ discovery-service ---
+[INFO] skip non existing resourceDirectory C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\discovery-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ discovery-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:4.0.5:run (default-cli) < test-compile @ discovery-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:4.0.5:run (default-cli) @ discovery-service ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.5)
+
+2026-04-15T23:05:47.157+05:30  INFO 12708 --- [discovery-service] [           main] c.k.d.DiscoveryServiceApplication        : Starting DiscoveryServiceApplication using Java 21.0.5 with PID 12708 (C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\discovery-service\target\classes started by VICTUS in C:\Users\VICTUS\OneDrive\Desktop\kissan_connect\discovery-service)
+2026-04-15T23:05:47.165+05:30  INFO 12708 --- [discovery-service] [           main] c.k.d.DiscoveryServiceApplication        : No active profile set, falling back to 1 default profile: "default"
+2026-04-15T23:05:49.586+05:30  INFO 12708 --- [discovery-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c08263e7-ea2c-379b-8df4-a5a236bab33a
+2026-04-15T23:05:50.235+05:30  INFO 12708 --- [discovery-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-04-15T23:05:50.268+05:30  INFO 12708 --- [discovery-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-15T23:05:50.268+05:30  INFO 12708 --- [discovery-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.20]
+2026-04-15T23:05:50.427+05:30  INFO 12708 --- [discovery-service] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3143 ms
+2026-04-15T23:05:52.424+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-15T23:05:52.425+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-15T23:05:52.804+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-15T23:05:52.804+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-15T23:05:53.097+05:30  INFO 12708 --- [discovery-service] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-04-15T23:05:54.469+05:30  WARN 12708 --- [discovery-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-04-15T23:05:54.507+05:30  INFO 12708 --- [discovery-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-04-15T23:05:54.547+05:30  INFO 12708 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-04-15T23:05:54.549+05:30  INFO 12708 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-04-15T23:05:54.553+05:30  INFO 12708 --- [discovery-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1776274554551 with initial instances count: 0
+2026-04-15T23:05:54.647+05:30  INFO 12708 --- [discovery-service] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-04-15T23:05:54.651+05:30  INFO 12708 --- [discovery-service] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2026-04-15T23:05:54.930+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-04-15T23:05:54.930+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-04-15T23:05:54.930+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-04-15T23:05:54.931+05:30  INFO 12708 --- [discovery-service] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-04-15T23:05:55.014+05:30  INFO 12708 --- [discovery-service] [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2026-04-15T23:05:55.035+05:30  INFO 12708 --- [discovery-service] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-04-15T23:05:55.035+05:30  INFO 12708 --- [discovery-service] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-04-15T23:05:55.056+05:30  INFO 12708 --- [discovery-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-04-15T23:05:55.148+05:30  INFO 12708 --- [discovery-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERY-SERVICE with eureka with status UP
+2026-04-15T23:05:55.171+05:30  INFO 12708 --- [discovery-service] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-04-15T23:05:55.172+05:30  INFO 12708 --- [discovery-service] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-04-15T23:05:55.172+05:30  INFO 12708 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-04-15T23:05:55.172+05:30  INFO 12708 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-04-15T23:05:55.173+05:30  INFO 12708 --- [discovery-service] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-04-15T23:05:55.178+05:30  INFO 12708 --- [discovery-service] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-04-15T23:05:55.209+05:30  INFO 12708 --- [discovery-service] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-04-15T23:05:55.211+05:30  INFO 12708 --- [discovery-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-04-15T23:05:55.238+05:30  INFO 12708 --- [discovery-service] [           main] c.k.d.DiscoveryServiceApplication        : Started DiscoveryServiceApplication in 9.444 seconds (process running for 11.005)
+2026-04-15T23:06:55.175+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:07:47.927+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-15T23:07:47.931+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-15T23:07:47.976+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 43 ms
+2026-04-15T23:07:50.047+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/LAPTOP-6OQSKS2K:user-service:8081 with status UP (replication=false)
+2026-04-15T23:07:51.105+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/LAPTOP-6OQSKS2K:user-service:8081 with status UP (replication=true)
+2026-04-15T23:07:55.175+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:08:06.305+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082 with status UP (replication=false)
+2026-04-15T23:08:06.818+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082 with status UP (replication=true)
+2026-04-15T23:08:08.045+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/LAPTOP-6OQSKS2K:order-service:8083 with status UP (replication=false)
+2026-04-15T23:08:08.564+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance ORDER-SERVICE/LAPTOP-6OQSKS2K:order-service:8083 with status UP (replication=true)
+2026-04-15T23:08:55.175+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:09:08.982+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=false)
+2026-04-15T23:09:09.492+05:30  INFO 12708 --- [discovery-service] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=true)
+2026-04-15T23:09:55.177+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:10:55.177+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:11:55.177+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:12:55.177+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:13:55.178+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:14:55.178+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:15:55.179+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:16:55.179+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:17:55.180+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:18:55.188+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 8ms
+2026-04-15T23:19:55.189+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:20:55.043+05:30  INFO 12708 --- [discovery-service] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2026-04-15T23:20:55.196+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-04-15T23:21:25.718+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=false)
+2026-04-15T23:21:26.244+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=true)
+2026-04-15T23:21:36.984+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082 with status UP (replication=false)
+2026-04-15T23:21:37.498+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance PRODUCT-SERVICE/LAPTOP-6OQSKS2K:product-service:8082 with status UP (replication=true)
+2026-04-15T23:21:55.196+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:22:55.197+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:23:55.197+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:24:55.198+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:25:55.198+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:26:55.198+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:27:55.200+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:28:00.543+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=false)
+2026-04-15T23:28:01.053+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=true)
+2026-04-15T23:28:55.201+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:29:54.761+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=false)
+2026-04-15T23:29:55.201+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:29:55.270+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=true)
+2026-04-15T23:30:55.203+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:31:55.202+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:32:55.203+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:33:55.203+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:34:33.709+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-1] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=false)
+2026-04-15T23:34:34.223+05:30  INFO 12708 --- [discovery-service] [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/LAPTOP-6OQSKS2K:api-gateway:8080 with status UP (replication=true)
+2026-04-15T23:34:55.204+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-04-15T23:35:55.043+05:30  INFO 12708 --- [discovery-service] [hresholdUpdater] c.n.e.r.PeerAwareInstanceRegistryImpl    : Current renewal threshold is : 8
+2026-04-15T23:35:55.205+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-04-15T23:36:55.223+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 15ms
+2026-04-15T23:37:55.222+05:30  INFO 12708 --- [discovery-service] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+^C

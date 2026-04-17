@@ -1,0 +1,20 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.kisanconnect:product-service >------------------
+[INFO] Building ProductService 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ product-service ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ product-service ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 15 source files with javac [debug parameters release 21] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.481 s
+[INFO] Finished at: 2026-04-15T22:07:37+05:30
+[INFO] ------------------------------------------------------------------------

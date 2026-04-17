@@ -1,0 +1,59 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  discovery-service:
+    build: ./discovery-service
+    ports:
+      - "8761:8761"
+    
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      - discovery-service
+
+  user-service:
+    build: ./user-service
+    depends_on:
+      mysql:
+        condition: service_healthy
+      discovery-service:
+        condition: service_started
+
+  product-service:
+    build: ./product-service
+    depends_on:
+      mysql:
+        condition: service_healthy
+      discovery-service:
+        condition: service_started
+
+  order-service:
+    build: ./order-service
+    depends_on:
+      mysql:
+        condition: service_healthy
+      discovery-service:
+        condition: service_started
+
+  frontend:
+    build: ./kissan-connect-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - api-gateway
