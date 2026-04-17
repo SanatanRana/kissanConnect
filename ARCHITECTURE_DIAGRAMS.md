@@ -38,15 +38,15 @@ graph TD;
     end
 
     %% Connections
-    Client -->|REST & Images| Gateway
-    Gateway -->|/api/auth & /api/users| UserService
-    Gateway -->|/api/products & /uploads| ProductService
-    Gateway -->|/api/orders| OrderService
+    Client -->|"REST & Images"| Gateway
+    Gateway -->|"/api/auth & /api/users"| UserService
+    Gateway -->|"/api/products & /uploads"| ProductService
+    Gateway -->|"/api/orders"| OrderService
 
-    Gateway <..>|Fetch Routes| Eureka
-    UserService <..>|Register| Eureka
-    ProductService <..>|Register| Eureka
-    OrderService <..>|Register| Eureka
+    Gateway -.->|"Fetch Routes"| Eureka
+    UserService -.->|"Register"| Eureka
+    ProductService -.->|"Register"| Eureka
+    OrderService -.->|"Register"| Eureka
 
     UserService --> DB_User
     ProductService --> DB_Product
